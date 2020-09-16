@@ -2,7 +2,6 @@
 
 - ***Introduction***
     
-    ❣️Member : SYLee
+    ❣️Member : SYLee, JYSim, SWPark
     
     🐋 Start Date : 2020. 08. 31
-    
