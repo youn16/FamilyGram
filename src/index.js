@@ -1,5 +1,5 @@
 import React from "react";
 import { render } from "react-dom";
-import Like_Seal from "./like_seal";
+import App from "./App";
 
-render(<Like_Seal />, document.getElementById("root"));
+render(<App />, document.getElementById("root"));
