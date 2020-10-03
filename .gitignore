@@ -18,10 +18,10 @@
 .env.test.local
 .env.production.local
 
+#log 파일
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-node_modules
 
 #swp
 *.swp
