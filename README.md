@@ -1,6 +1,6 @@
 # FamilyGram
 
-Open Source-Based Design Study
+> Open Source-Based Design Study
 
 - 🥰MEMBER
 
@@ -12,4 +12,4 @@ Open Source-Based Design Study
 
 - 😋START DATE
 
-    @2020/08/31 ~
+    Aug 31, 2020 ~
