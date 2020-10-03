@@ -4,7 +4,7 @@
 
 - 🥰MEMBER
 
-    [SY_LEE](https://github.com/youn16) ![image](https://user-images.githubusercontent.com/54494532/94995979-ca4e3880-05dc-11eb-8681-b6e13217e6b0.png)
+    [SY_LEE](https://github.com/youn16) <img src="https://user-images.githubusercontent.com/54494532/94995979-ca4e3880-05dc-11eb-8681-b6e13217e6b0.png" alt="drawing" width="20"/>
 
 
     [JY_SIM](https://github.com/DDONGKKANG) ![image](https://user-images.githubusercontent.com/54494532/94995968-bc001c80-05dc-11eb-9081-b679b913eb46.png)
