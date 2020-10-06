@@ -1,21 +1,22 @@
 import React from 'react'
-import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 
 function bar_header() {
     return (
-        <Navbar bg="dark" variant="dark">
-            <Navbar.Brand href="#home
-            ">Navbar</Navbar.Brand>
-            <Nav className="mr-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#features">Features</Nav.Link>
-                <Nav.Link href="#pricing">Pricing</Nav.Link>
-            </Nav>
-            <Form inline>
-                <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                <Button variant="outline-info">Search</Button>
-            </Form>
-        </Navbar>
+        <AppBar position="static">
+            <Toolbar>
+                <Button color="inherit" href="/cal_week">캘린더</Button>
+                <Button color="inherit" href="/sign_in">로그인</Button>
+                <Button color="inherit" href="/sign_up">회원가입</Button>
+                <Button color="inherit" href="/sign_up">회원초대</Button>
+                <Button color="inherit" href="/sign_up">일정추가</Button>
+                <Button color="inherit" href="/sign_up">일정자세히</Button>
+                <Button color="inherit" href="/sign_up">할일목록</Button>
+            </Toolbar>
+        </AppBar>
     )
 }
 
