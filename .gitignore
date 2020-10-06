@@ -25,3 +25,6 @@ yarn-error.log*
 
 #swp
 *.swp
+
+#etc
+dev.js
