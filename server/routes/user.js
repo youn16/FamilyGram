@@ -1,5 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const { auth } = require("../middleware/auth");
+const cookieParser = require('cookie-parser');
+const { User } = require("../models/User");
+const config = require('../config/key');
 
 router.get('/', (req, res) => {
     res.send('Hello World! mod test')
