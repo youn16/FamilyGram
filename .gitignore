@@ -28,3 +28,4 @@ yarn-error.log*
 
 #etc
 dev.js
+node_modules/
