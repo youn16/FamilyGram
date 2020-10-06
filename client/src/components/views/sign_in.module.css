@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .like_seal {
+    display: block;
+    margin: 60px auto;
+    width: 500px;
+    font-family: SeoulNamsanB;
+    font-size: 100px;
+    text-align: center;
+    color: #86c5f0;
+  }
+  
+  .label {
+    display: block;
+    width: 500px;
+    margin: 10px auto;
+  }
+  
+  .input_box {
+    display: block;
+    width: 500px;
+    margin: 0px auto;
+    height: 35px;
+    border: solid 1px #707070;
+    background-color: #ffffff;
+  }
+  
+  .button_header {
+    display: flex;
+    margin: 30px auto;
+  }
+  
+  .Btn {
+    display: block;
+    width: 200px;
+    height: 35px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: SeoulNamsanB;
+    background-color: #E0A2BB;
+    color: white;
+    border-radius: 25px;
+    border: #E0A2BB;
+  }
+  
+  .Header {
+    color: #E0A2BB;
+    text-align: center;
+  }
