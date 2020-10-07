@@ -46,18 +46,24 @@ function Sign_up(props) {   // 처음 대문자로 해야 에러 안남! 이유 
     const onSubmitHandler = (event) => {
         event.preventDefault(); // 아래 내용을 수행하기 위해 refresh하는 것을 방지
 
-        console.log('Email', Email)
+        if (Password != ConfirmPassword) {
+            return alert('비밀번호 일치 부탁!')
+        }
         let body = {
             email: Email,
-            password: Password
+            password: Password,
+            name: Name,
+            birth: Birth,
+            sex: Sex,
+            phone: Phone
         }
         /*
-        dispatch(loginUser(body)) // dispatch를 이용해서 loginUser라는 action을 취함
+        dispatch(registerUser(body)) // dispatch를 이용해서 loginUser라는 action을 취함
             .then(response => {
-                if(response.payload.loginSuccess) { // 로그인 성공 시
-                    props.history.push('/')         // 루트 페이지로 이동
+                if(response.payload.success) { // 로그인 성공 시
+                    props.history.push('/sign_in')         // 루트 페이지로 이동
                 } else {
-                    alert('Error in sign_in.js')
+                    alert('Error in sign_up.js')
                 }
             })
             */
