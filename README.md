@@ -11,3 +11,7 @@
 - 😋START DATE
 
     Aug 31, 2020 ~
+
+***Reference***<br>
+   1. React
+   2. MongoDB
