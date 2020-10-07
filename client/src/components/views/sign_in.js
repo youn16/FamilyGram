@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Styles from './sign_in.module.css';
+import Sign_Styles from './sign.module.css';
 import { useDispatch } from 'react-redux';
 import { loginUser } from '../../_actions/user_action'
 
@@ -36,29 +36,29 @@ function Sign_in(props) {   // 처음 대문자로 해야 에러 안남! 이유 
     }
     return (
         <div>
-            <form className={Styles.header}
+            <form className={Sign_Styles.header}
                 onSubmit={onSubmitHandler}  // form도 submit event가 필요
             >
-                <h1 className={Styles.like_seal}>LIKE SEAL</h1>
-                <label className={Styles.label}>Email</label>
-                <input className={Styles.input_box}
+                <h1 className={Sign_Styles.like_seal}>LIKE SEAL</h1>
+                <label className={Sign_Styles.label}>Email</label>
+                <input className={Sign_Styles.input_box}
                     type="email"
                     value={Email} // value에 state을 넣어 줘야 함
                     onChange={onEmailHandler} />
 
-                <label className={Styles.label}>Password</label>
-                <input className={Styles.input_box}
+                <label className={Sign_Styles.label}>Password</label>
+                <input className={Sign_Styles.input_box}
                     type="password"
                     value={Password}
                     onChange={onPasswordHandler} />
 
-                <div className={Styles.button_header}>
+                <div className={Sign_Styles.button_header}>
                     <button
-                        className={Styles.Btn}
+                        className={Sign_Styles.Btn}
                         type="submit" > 로그인
                         </button>
                     <button
-                        className={Styles.Btn}
+                        className={Sign_Styles.Btn}
                         type="submit" > 회원가입
                         </button>
                 </div>
