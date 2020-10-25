@@ -45,20 +45,6 @@ function Sign_up(props) {   // 처음 대문자로 해야 에러 안남! 이유 
     }
     //this.changeAppointment = this.changeAppointment.bind(this);
 
-    const pickerEditorProps = field => ({
-        //className: classes.picker,
-        // keyboard: true,
-        ampm: false,
-        //value: displayAppointmentData[field],
-        
-        //onChange: date => this.changeAppointment({
-            //field: [field], changes: date ? date.toDate() : new Date(displayAppointmentData[field]),
-        //}),
-        inputVariant: 'outlined',
-        format: 'DD/MM/YYYY HH:mm',
-        onError: () => null,
-    });
-
     const onSubmitHandler = (event) => {
         event.preventDefault(); // 아래 내용을 수행하기 위해 refresh하는 것을 방지
 
@@ -73,7 +59,6 @@ function Sign_up(props) {   // 처음 대문자로 해야 에러 안남! 이유 
             sex: Sex,
             phone: Phone
         }
-        /*
         dispatch(registerUser(body)) // dispatch를 이용해서 loginUser라는 action을 취함
             .then(response => {
                 if(response.payload.success) { // 로그인 성공 시
@@ -82,7 +67,7 @@ function Sign_up(props) {   // 처음 대문자로 해야 에러 안남! 이유 
                     alert('Error in sign_up.js')
                 }
             })
-            */
+
     }
     return (
         <div>
@@ -115,13 +100,11 @@ function Sign_up(props) {   // 처음 대문자로 해야 에러 안남! 이유 
                     onChange={onNameHandler} />
 
                 <label className={Styles.label}>생년월일</label>
-                <MuiPickersUtilsProvider  utils={MomentUtils}>
-                    <KeyboardDateTimePicker
-                        className={Styles.wrapper} 
-                        label="Birth Date"
-                        {...pickerEditorProps('birthDate')}
-                    />
-                </MuiPickersUtilsProvider>
+                <input className={Styles.input_box}
+                    type="birth"
+                    value={Birth}
+                    onChange={onBirthHandler} />
+
                 <label className={Styles.label}>성별</label>
                 <input className={Styles.input_box}
                     type="sex"
