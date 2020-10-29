@@ -5,7 +5,7 @@ import CalendarToday from '@material-ui/icons/CalendarToday';
 
 import MomentUtils from '@date-io/moment';
 import { useDispatch } from 'react-redux';
-import { loginUser } from '../../_actions/user_action'
+import { registerUser } from '../../_actions/user_action'
 
 function Sign_up(props) {   // 처음 대문자로 해야 에러 안남! 이유 모름!
     //const dispatch = useDispatch();
@@ -59,6 +59,7 @@ function Sign_up(props) {   // 처음 대문자로 해야 에러 안남! 이유 
             sex: Sex,
             phone: Phone
         }
+        /*
         dispatch(registerUser(body)) // dispatch를 이용해서 loginUser라는 action을 취함
             .then(response => {
                 if(response.payload.success) { // 로그인 성공 시
@@ -67,6 +68,7 @@ function Sign_up(props) {   // 처음 대문자로 해야 에러 안남! 이유 
                     alert('Error in sign_up.js')
                 }
             })
+            */
 
     }
     return (
